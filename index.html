@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="button.css">
+    <title>Дрозд дз</title>
+</head>
+
+<body>
+    <div style="width:90%;
+    margin:auto;">
+        <div
+            style="border-image: linear-gradient(to right,rgba(0,0,0,0), #fdc357,rgba(0,0,0,0) ) 100% 10%; border-bottom: 2px solid;">
+        </div>
+        <div style="height: 1500px;
+    padding: 15px;
+    background-color: rgba(78, 67, 65,0.5);
+    text-align: center;
+    font-family: osn;">
+            <div style="font-size:300%; color: #fdc357;">Добро пожаловать!</div>
+            <div style="font-size:200%; color: white;">Приветствую вас, многоуважаемый посетитель. Если вы оказались на
+                данной странице, то, скорее всего, один из тех, кто был вам близок, покинул наш мир. Мы сожалеем о вашей
+                утрате и потому готовы предоставить вам каечственные услуги по огранизации и проведению прощания с вашим
+                близким. Ниже вы сможете ознакомиться с пакетами услуг, а также найти контакты для обратной связи.
+                <hr />
+            </div>
+            <section style="display:block;">
+                <div style="font-size:300%; color: #fdc357;">Галерея</div>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade" style="display:block;">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="klad1.jpg" style="width:100%">
+                        <div class="text">Качественные услуги по погребению и отпеванию</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="klad2.jpg" style="width:100%">
+                        <div class="text">Большая сеть лицензированных кладбищ</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="klad3.jpg" style="width:100%">
+                        <div class="text">Уже более 4000 заказов</div>
+                    </div>
+
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <hr />
+                </div>
+            </section>
+
+            <br>
+            <section style="display: block;">
+                <div style="font-size:300%; color: #fdc357;">Заказать услуги</div>
+
+
+                <div style="font-size:300%; color: #fdc357;">Услуги и цены</div>
+
+                <a href="index2.html" class="button">Посмотреть пакеты услуг</a>
+
+
+            <iframe src="" name="myFrame" frameborder="0"></iframe>
+            <div class="w-100" id="shower">
+                <div class="col-12 text-center">
+                    <i class="far fa-check-circle"></i>
+                </div>
+                <div class="col-12 text-center">
+                    <h3 class="text-submitted"><span class="green">Форма была</span> успешно отправлена!</h3>
+                </div>
+            </div>
+
+            <form action="https://formspree.io/mdowejpr" method="POST" target="myFrame" class="myForm">
+                <fieldset class="email">
+                    <legend>Email <span class="required-span">*</span></legend>
+                    <input type="email" name="Email" onkeyup="checkEmail();" placeholder="jhonathan@gmail.com"
+                        required>
+                </fieldset>
+
+                <fieldset class="fio">
+                    <legend>ФИО <span class="required-span">*</span></legend>
+                    <input type="text" name="Имя" onkeyup="checkName();" placeholder="Jhonathan Doe" required>
+                </fieldset>
+
+                <fieldset class="radio-buttons unFilledField" onclick="checkRadioButtons();">
+                    <legend>Выбирете тип сайта</legend>
+                    <label for="radio1">
+                        <input type="radio" name="type-of-service" id="radio1" value="Лендинг"> Эконом<br>
+                    </label>
+
+                    <label for="radio3">
+                        <input type="radio" name="type-of-service" id="radio3" value="Сайт портфолио"> Стандарт
+                        <br>
+                    </label>
+
+                    <label for="radio4">
+                        <input type="radio" name="type-of-service" id="radio4" value="Одностраничник">
+                        Премиум<br>
+                    </label>
+                </fieldset>
+                
+                <input type="submit" onclick="hideshow();">
+            </form>
+
+        </div>
+    </div>
+    <div
+        style="border-image: linear-gradient(to right,rgba(0,0,0,0), #fdc357,rgba(0,0,0,0) ) 100% 10%; border-bottom: 2px solid;">
+    </div>
+
+
+<script src="slider.js"></script>
+
+</body>
+
+</html>

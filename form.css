@@ -1,0 +1,149 @@
+iframe[name="myFrame"] {
+    height: 0px;
+    width: 0px;
+  }
+  
+  .myForm {
+    padding: 10px;
+    max-width: 450px;
+    margin-top: 25vh;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #272221;
+    color: white;
+    box-shadow: 0 0 0 1px white;
+    border-radius:8px;
+  }
+  .myForm fieldset {
+    position: relative;
+    bottom: 0;
+    border: 1px solid lightgray;
+    padding: 10px 10px 15px 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: .2s linear;
+  }
+  .myForm fieldset:hover {
+    bottom: 3px;
+    border-color: #3e82f7;
+  }
+  .myForm fieldset:hover legend {
+    color: #3e82f7;
+  }
+  .myForm fieldset legend {
+    font-weight: bold;
+    font-size: 20px;
+    transition: .2s linear;
+  }
+  .myForm fieldset legend .required-span {
+    color: red;
+  }
+  .myForm .fio input[type="text"] {
+    width: 100%;
+  }
+  .myForm .email input[type="email"] {
+    width: 100%;
+  }
+  .myForm input {
+    transition: .2s linear;
+  }
+  .myForm input:disabled {
+    pointer-events: none;
+    cursor: default;
+    user-select: none;
+    filter: grayscale(100%);
+    background-color: none;
+  }
+  .myForm input[type="text"], .myForm input[type="email"], .myForm input[type="number"] {
+    background-color: #e2e2e2;
+    border: none;
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  .myForm input[type="text"]:hover, .myForm input[type="text"]:focus, .myForm input[type="text"]:active, .myForm input[type="email"]:hover, .myForm input[type="email"]:focus, .myForm input[type="email"]:active, .myForm input[type="number"]:hover, .myForm input[type="number"]:focus, .myForm input[type="number"]:active {
+    background-color: #ededed;
+  }
+  .myForm input[type="radio"] {
+    transition: all .2s linear;
+  }
+  .myForm input[type="radio"]:after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -1px;
+    width: 15px;
+    height: 15px;
+    background-color: lightgray;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 white;
+    transition: .2s linear;
+  }
+  .myForm input[type="radio"]:checked:after {
+    background-color: white;
+    box-shadow: inset 0 0 0 4px #2196F3;
+    content: "";
+    transition: .2s linear;
+  }
+  .myForm input[type="submit"] {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 2px solid white;
+    box-shadow: 0 0 5px gray;
+    background-color: #3e82f7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .myForm input:focus, .myForm inputtextarea:focus {
+    outline: none;
+  }
+  
+  fieldset.unFilledField {
+    border-color: red;
+    color: red;
+  }
+  fieldset.unFilledField:hover {
+    border-color: red;
+    color: red;
+  }
+  fieldset.unFilledField:hover legend {
+    color: red;
+  }
+  
+  #shower {
+    display: none;
+    text-align: center;
+    max-width: 450px;
+    margin-top: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #shower i, #shower svg {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 1.25rem;
+  }
+  #shower .text-submitted {
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+  }
+  
+  @keyframes showwww {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes hiderrr {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
