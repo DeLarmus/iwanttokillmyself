@@ -23,7 +23,7 @@
     padding: 10px; /* Поля вокруг текста */
     left: 25%; /* Размещаем у левого края */
     width: 50%; /* Ширина содержимого */
-    display: none; /* Прячем вкладку */
+    display: none;
     font-size:120%; 
     color: white;
 }
